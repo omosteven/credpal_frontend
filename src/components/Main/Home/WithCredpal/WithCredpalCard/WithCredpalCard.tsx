@@ -1,7 +1,5 @@
 import "./WithCredpalCard.scss";
 
-import { Link } from "react-router-dom";
-
 interface IWithCredpalCard {
   title: string;
   description: string;
@@ -22,10 +20,11 @@ const WithCredpalCard = (props: IWithCredpalCard) => {
         <h3>{title}</h3>
         <p>{description}</p>
 
-        <Link to={route}>
+        {/* update to <Link for  fully fleshed  website */}
+        <a href={route}>
           Learn More
           <img src={routeIcon} alt="Go" />{" "}
-        </Link>
+        </a>
       </div>
     </section>
   );
