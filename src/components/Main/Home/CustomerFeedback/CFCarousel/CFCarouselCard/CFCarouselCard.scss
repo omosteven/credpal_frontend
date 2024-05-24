@@ -1,0 +1,61 @@
+@import "src/components/ui/__variables";
+
+.cf-carousel-card {
+  width: 384px !important;
+
+  height: fit-content !important;
+
+  padding: 24px;
+
+  gap: 30px;
+
+  border-radius: 6px 0px 0px 0px;
+
+  opacity: 0px;
+
+  background: #f9fafb;
+
+  display: flex;
+
+  flex-direction: column;
+
+  &__heading {
+    display: flex;
+
+    gap: 8px;
+  }
+
+  h5 {
+    font-family: Poppins;
+
+    font-size: 14px !important;
+
+    font-weight: 600 !important;
+
+    line-height: 24px !important;
+
+    text-align: left !important;
+
+    margin-top: 6px !important;
+
+    margin-bottom: 0 !important;
+
+    color: black !important;
+  }
+
+  p {
+    font-family: Poppins !important;
+
+    font-size: 14px !important;
+
+    font-weight: 300 !important;
+
+    line-height: 32px !important;
+
+    text-align: left !important;
+
+    margin-top: 0px !important;
+
+    margin-bottom: 0 !important;
+  }
+}

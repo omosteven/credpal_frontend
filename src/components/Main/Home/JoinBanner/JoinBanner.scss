@@ -1,0 +1,25 @@
+@import "src/components/ui/__variables";
+
+.join-banner {
+  display: grid;
+
+  height: fit-content;
+
+  gap: 32px;
+
+  background-color: #f1f5ff;
+
+  align-items: center;
+
+  grid-template-columns: 1fr 1fr;
+
+  margin-top: 150px;
+
+
+  @media screen and (max-width: $medium-screen) {
+    grid-template-columns: 1fr;
+
+    margin-top: 40px;
+  }
+
+}

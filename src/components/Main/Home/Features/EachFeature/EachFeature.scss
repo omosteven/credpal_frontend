@@ -1,0 +1,15 @@
+@import "src/components/ui/__variables";
+
+.each-feature {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  @media screen and (max-width: $medium-screen) {
+    padding-top: 50px;
+
+    display: block;
+  }
+
+  height: fit-content;
+}

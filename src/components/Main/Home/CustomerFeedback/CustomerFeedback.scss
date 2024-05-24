@@ -1,0 +1,62 @@
+@import "src/components/ui/__variables";
+
+.customer-feedback {
+  padding: 150px 50px 0px 50px;
+
+  @media screen and (max-width: $large-screen) {
+    padding: 50px 50px 50px 50px;
+
+  }
+
+  @media screen and (max-width: $medium-screen) {
+    padding: 50px 32px 50px 32px;
+  }
+
+  h1 {
+    font-family: Poppins;
+
+    font-size: 40px;
+
+    font-weight: 700;
+
+    line-height: 56px;
+
+    letter-spacing: -0.02em;
+
+    text-align: center;
+
+    margin-top: 0;
+
+    margin-bottom: 0;
+
+    @media screen and (max-width: $medium-screen) {
+      font-size: 32px;
+
+      line-height: 40px;
+    }
+  }
+
+  h5 {
+    font-family: Poppins;
+
+    font-size: 24px;
+
+    font-weight: 300;
+
+    line-height: 32px;
+
+    text-align: center;
+
+    color: #777e90;
+
+    margin-top: 16px;
+
+    margin-bottom: 0px !important;
+
+    @media screen and (max-width: $medium-screen) {
+      font-size: 16px;
+
+      margin-top: 0px;
+    }
+  }
+}

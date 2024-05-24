@@ -1,0 +1,29 @@
+@import "src/components/ui/__variables";
+
+.features {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 130px; //ss
+
+  padding: 150px 200px 0px 200px;
+
+  @media screen and (max-width: calc($large-screen + 150px)) {
+    padding: 32px 50px 0px 50px;
+
+    gap: 40px;
+  }
+
+  @media screen and (max-width: calc($large-screen)) {
+    padding: 32px 50px 32px 50px;
+
+    gap: 40px;
+  }
+
+  @media screen and (max-width: $medium-screen) {
+    padding: 0px 32px 0px 32px;
+
+    gap: 0px;
+  }
+}

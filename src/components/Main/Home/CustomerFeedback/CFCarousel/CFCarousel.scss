@@ -1,0 +1,66 @@
+@import "src/components/ui/__variables";
+.cf-carousel {
+  margin-top: 80px;
+
+  &__list {
+    display: flex;
+
+    gap: 28px;
+
+    overflow-y: scroll;
+
+    width: 100%;
+  }
+
+  &__nav {
+    width: fit-content;
+
+    margin-left: auto;
+
+    margin-top: 30px; //sss
+
+    margin-right: 50px; //sss;
+
+    display: block;
+
+    @media screen and (max-width: $medium-screen) {
+      margin-right: 0px;
+    }
+
+    div {
+      display: flex;
+
+      gap: 30px; //sss
+    }
+
+    button {
+      width: 40px;
+
+      height: 40px;
+
+      padding: 8px;
+
+      border-radius: 4px;
+
+      background: #151515;
+
+      color: white;
+
+      border: none;
+
+      gap: 0px;
+
+      font-weight: bold;
+
+      font-size: 18px !important;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      cursor: pointer;
+    }
+  }
+}

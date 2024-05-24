@@ -1,0 +1,25 @@
+@import "src/components/ui/__variables";
+
+.with-credpal {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  gap: 10px;
+
+  margin-top: 140px;
+
+  @media screen and (max-width: $large-screen) {
+    grid-template-columns: 1fr 1fr;
+
+    margin-top: 100px;
+  }
+
+  @media screen and (max-width: $small-screen) {
+    grid-template-columns: 1fr;
+
+    margin-top: 100px;
+
+    // display: none;
+  }
+}

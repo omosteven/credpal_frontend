@@ -1,0 +1,23 @@
+@import "../_variables";
+
+.custom-rating {
+  display: flex;
+
+  gap: 10px;
+
+  color: $gray-color;
+
+  font-size: 17.12px;
+
+  &__icon {
+    cursor: pointer;
+  }
+
+  &__rated {
+    color: $primary-variant-color;
+  }
+
+  &__rated-red {
+    color: $cancel-color;
+  }
+}

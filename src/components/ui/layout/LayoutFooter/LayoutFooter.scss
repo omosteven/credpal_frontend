@@ -1,0 +1,171 @@
+@import "src/components/ui/__variables";
+
+.layout-footer {
+  padding: 0px 120px 0px 120px;
+
+  @media screen and (max-width: $large-screen) {
+    padding: 0px 50px 0px 50px;
+  }
+
+  @media screen and (max-width: $medium-screen) {
+    padding: 0px 32px 0px 32px;
+  }
+
+  &__top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 40px 0px;
+
+    @media screen and (max-width: $large-screen) {
+      display: block;
+    }
+
+    &__store-img {
+      display: block;
+
+      img {
+        display: block;
+
+        margin-top: 20px;
+
+        cursor: pointer;
+      }
+    }
+
+    p {
+      font-family: Poppins;
+
+      font-size: 12px;
+
+      font-weight: 400;
+
+      line-height: 16px;
+
+      text-align: left;
+
+      color: #23262f;
+    }
+
+    &__left {
+      width: 350px;
+
+      @media screen and (max-width: $large-screen) {
+        width: 100%;
+      }
+
+      p {
+        line-height: 32px;
+      }
+    }
+
+    &__right {
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 30px; //sss
+
+      p {
+        cursor: pointer;
+
+        font-family: Poppins;
+
+        font-size: 12px;
+
+        font-weight: 400;
+
+        line-height: 16px;
+
+        text-align: left;
+
+        color: #40444f;
+
+        margin-top: 20px;
+      }
+
+      @media screen and (max-width: $medium-screen) {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 0;
+      }
+    }
+
+    h5 {
+      font-family: DM Sans;
+
+      font-size: 16px;
+
+      line-height: 24px;
+
+      text-align: left;
+
+      font-family: DM Sans;
+
+      font-weight: 500;
+
+      color: #23262f;
+    }
+  }
+
+  &__middle {
+    border-top: 1px solid #e6e8ec;
+
+    border-bottom: 1px solid #e6e8ec;
+
+    padding: 40px 0px;
+
+    p {
+      color: #40444f;
+
+      font-size: 12px;
+
+      line-height: 23px;
+
+      font-weight: 400;
+
+      font-family: Poppins;
+    }
+  }
+
+  &__bottom {
+    padding: 40px 0px;
+
+    p {
+      font-family: DM Sans;
+
+      font-size: 12px;
+
+      font-weight: 400;
+
+      line-height: 20px;
+
+      text-align: right;
+    }
+
+    button {
+      font-family: DM Sans;
+
+      font-size: 12px;
+
+      font-weight: 700;
+
+      line-height: 20px;
+
+      text-align: right;
+
+      color: #3772ff;
+
+      background-color: transparent;
+
+      border: none;
+
+      cursor: pointer;
+    }
+  }
+}
