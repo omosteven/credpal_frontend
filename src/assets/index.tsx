@@ -1,5 +1,8 @@
 import heroImage from "./images/hero-image.png";
 import cust1 from "./images/cust1.svg";
+import cust2 from "./images/cust2.svg";
+import cust3 from "./images/cust3.svg";
+import cust4 from "./images/cust4.svg";
 import payments from "./images/payments.svg";
 import savings from "./images/savings.svg";
 import vCards from "./images/v-cards.svg";
@@ -21,8 +24,11 @@ import joinImage from "./images/join-image.svg";
 
 const assets: any = {
   images: {
-    heroImage: heroImage,
+    heroImage,
     cust1,
+    cust2,
+    cust3,
+    cust4,
     payments,
     savings,
     vCards,

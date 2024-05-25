@@ -7,9 +7,12 @@
 
     gap: 28px;
 
-    overflow-y: scroll;
+    // overflow-y: scroll;
+
+    overflow: hidden;
 
     width: 100%;
+
   }
 
   &__nav {

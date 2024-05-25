@@ -12,7 +12,11 @@ interface IWithCredpalCard {
 const WithCredpalCard = (props: IWithCredpalCard) => {
   const { title, description, icon, route, background, routeIcon } = props;
   return (
-    <section className="with-credpal-card" style={{ background }}>
+    <section
+      className="with-credpal-card"
+      style={{ background }}
+      data-aos="zoom-in"
+    >
       <div>
         <span>
           <img src={icon} alt="title" />

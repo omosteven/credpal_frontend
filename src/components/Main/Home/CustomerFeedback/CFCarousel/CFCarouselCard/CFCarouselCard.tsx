@@ -11,7 +11,7 @@ interface ICFCarousel {
 const CFCarouselCard = (props: ICFCarousel) => {
   const { name, text, rating, picture } = props;
   return (
-    <section className="cf-carousel-card">
+    <section className="cf-carousel-card" id="cf-carousel-card">
       <div className="cf-carousel-card__heading">
         <img src={picture} alt={name} />
         <h5>{name}</h5>

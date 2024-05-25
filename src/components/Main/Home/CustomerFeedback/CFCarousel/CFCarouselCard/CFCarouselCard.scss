@@ -1,9 +1,9 @@
 @import "src/components/ui/__variables";
 
 .cf-carousel-card {
-  width: 384px !important;
+  // width: 384px !important;
 
-  height: fit-content !important;
+  // height: fit-content !important;
 
   padding: 24px;
 
@@ -18,6 +18,20 @@
   display: flex;
 
   flex-direction: column;
+
+  // width: 500px !important;
+
+  // flex:0  0 90%;
+
+  flex:0  0 384px;
+
+  // @media screen and (max-width: $medium-screen) {
+  //   flex:0  0 384px;
+  // }
+
+  @media screen and (max-width: $small-screen) {
+    flex:0  0 calc(100% - 32px);
+  }
 
   &__heading {
     display: flex;
@@ -36,7 +50,7 @@
 
     text-align: left !important;
 
-    margin-top: 6px !important;
+    margin-top: 0px !important;
 
     margin-bottom: 0 !important;
 

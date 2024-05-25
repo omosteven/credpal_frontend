@@ -1,9 +1,13 @@
-const CFCarouselNav = () => {
+const CFCarouselNav = (props: {
+  handleNext: Function;
+  handlePrev: Function;
+}) => {
+  const { handleNext, handlePrev } = props;
   return (
     <div className="cf-carousel__nav">
       <div>
-        <button>{"<"}</button>
-        <button>{">"}</button>
+        <button onClick={() => handlePrev()}>{"<"}</button>
+        <button onClick={() => handleNext()}>{">"}</button>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import "./JoinBannerImages.scss";
 
 const JoinBannerImages = () => {
   return (
-    <section className="join-banner-images">
+    <section className="join-banner-images" data-aos="zoom-in">
       <img src={assets.images.joinImage} alt="Join Us" />
     </section>
   );

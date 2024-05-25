@@ -3,10 +3,14 @@ import Button from "../../Button";
 
 import "./LayoutHeader.scss";
 import Icon from "components/ui/Icon";
+import { useState } from "react";
+import LayoutHeaderNavbar from "./LayoutHeaderNavbar/LayoutHeaderNavbar";
 
 const { ng, credpalWhite } = assets.images;
 
 const LayoutHeader = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
   return (
     <header className="layout-header">
       <section className="first">
@@ -22,7 +26,15 @@ const LayoutHeader = () => {
           <Icon icon="dropDown" />
         </span>
         <Button text="Download the Credpal app" />
+
+        <Icon
+          icon={`${isOpen ? "close" : "menu"}`}
+          className="mobile_nav-icon"
+          onClick={() => setIsOpen(!isOpen)}
+        />
       </section>
+
+     <LayoutHeaderNavbar isOpen={isOpen}/>
     </header>
   );
 };

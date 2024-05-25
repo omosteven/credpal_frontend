@@ -4,7 +4,7 @@ import "./CustomerFeedback.scss";
 
 const CustomerFeedback = () => {
   return (
-    <div className="customer-feedback">
+    <div className="customer-feedback" data-aos="zoom-in">
       <CFHeader />
       <CFCarousel />
     </div>
